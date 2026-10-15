@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title> Ex_1_form</title>
+	</head>
+	<body>
+		<form action="#" method="POST">
+			<label for="nome">Código</label>
+			<input type="text" id="codigo" name="codigo"  value="0" disabled>
+			<br><br>
+			
+			<label for="number">N° do Contrato</label>
+			<input type="text" id="number" name="n_contrato" >
+			
+			<label for="number">N° da Loja</label>
+			<input type="text" id="number" name="n_loja" >
+			<br>
+			
+			<label for="descricao">Descrição</label>
+			<input type="text" id="descricao" name="descricao">
+			<br>
+			
+			<label for="data_nascimento">Data</label>
+			<input type="date" id="data" name="data">
+			<br>
+			
+			<label for="operadora">Operadora</label>
+			<select name="operadora" id="operadora" required>
+				<option value="1">1 </option>
+				<option value="2">2</option>
+				<option value="3">3 </option>
+				</select>
+			<br>
+			
+			<label for="Filial">Filial</label>
+			<select name="filial" id="Filial" required>
+				<option value="1">1 </option>
+				<option value="2">2</option>
+				<option value="3">3 </option>
+			</select>
+			<br>
+			
+			<label for="empresa_matriz">Empresa Matriz</label>
+			<select name="empresa_matriz" id="empresa_matriz" required>
+				<option value="1">1 </option>
+				<option value="2">2</option>
+				<option value="3">3 </option>
+			</select>
+			<br>
+			
+			<label for="origem">Origem das Contas Contabeis</label>
+			<select name="origem_contabeis" id="origem_contabeis" required>
+				<option value="1">Contrato </option>
+				<option value="2">2</option>
+				<option value="3">3 </option>
+			</select>
+			<br>
+			
+			<label for="status">Status do Contrato</label>
+			<select name="status" id="status" required>
+				<option value="1">Ativo</option>
+				<option value="2">Pause</option>
+				<option value="3">Desenvolvimento</option>
+			</select>
+			<br>
+			
+			<label for="identificar_comprovante">Identificar Comprovante por </label>
+			<select name="identificar_comprovante" id="identificar_comprovante" required>
+				<option value="1">Número da Autorização</option>
+				<option value="2">Codigo de barras </option>
+				<option value="3">Qr CODE</option>
+			</select>
+			<br>
+			
+			<input type="checkbox" id="deposito" name="deposito" required> Depósito na conta informada no arquivo
+			<br>
+			
+			<input type="checkbox" id="conciliacao" name="conciliacao" required> Conciliação Consolidada  
+			<br>
+			
+			<label for="nome">Permitir conciliar manualmente quando há varição de até</label>
+			<input type="number" id="conciliacao" name="conciliacao">
+			<br>
+			
+			<input type="checkbox" id="termo" name="termo" required> Remozer zeros esquerda do n° Comprovante 
+			
+			<input type="checkbox" id="termo" name="termo" required> Validar valores na conciliação automática
+			<br>
+			
+			<input type="checkbox" id="termo" name="termo" required>Usar campo de usuário [Data da transação do cartão] do contas a receber para identificar o comprovante na Conciliação
+			<br>
+			
+			<input type="checkbox" id="termo" name="termo" required>Gerar Contas a receber por conta para comprovantes não identificados
+			
+			<input type="checkbox" id="termo" name="termo" disabled> Contas a receber Agrupado
+			<br>
+			
+			<input type="checkbox" id="termo" name="termo" required>Usar projeto do cadastro de equipamento
+			
+			<input type="checkbox" id="termo" name="termo" required>LCM agrupado de comprovante de cartão 
+			<br>
+			
+			<label for="cartao">Cartão</label>
+			<input style="background-color: #D9E5F2; type="number" id="cartao" name="cartao"  value="não Informado";>
+			<br>
+			
+			<label for="cartao">Forma de pagamento</label>
+			<input style="background-color: #D9E5F2; type="number" id="cartao" name="cartao"  value="não Informado";>
+			<br><br>
+			
+			<p><b>Contabilização:</b></p>
+
+			<label for ="nome">Conta de Provisão ➡️</label>
+			<input type="number" id="meuNumero" value="0">
+			<input type="text" id="nome" name="nome" placeholder="" minlength="3" max=length="255" required>
+			<br><br>
+
+			<label for ="nome">Conta de Banco ➡️</label>
+			<input type="number" id="meuNumero" value="0">
+			<input type="text" id="nome" name="nome" placeholder="" minlength="3" max=length="255" required>
+			<br><br>
+
+			<label for ="nome">Conta para Comissão ➡️</label>
+			<input type="number" id="meuNumero" value="0">
+			<input type="text" id="nome" name="nome" placeholder="" minlength="3" max=length="255" required>
+			<br><br>
+
+			<label for ="nome">Conta para Cancelamento ➡️</label>
+			<input type="number" id="meuNumero" value="0">
+			<input type="text" id="nome" name="nome" placeholder="" minlength="3" max=length="255" required>
+			<br><br>
+
+			<label for ="nome">Conta de Antecipação  ➡️</label>
+			<input type="number" id="meuNumero" value="0">
+			<input type="text" id="nome" name="nome" placeholder="" minlength="3" max=length="255" required>
+			<br><br>
+
+			<label for ="nome">Conta de Ajuste Debito ➡️</label>
+			<input type="number" id="meuNumero" value="0">
+			<input type="text" id="nome" name="nome" placeholder="" minlength="3" max=length="255" required>
+			<br><br>
+
+			<label for ="nome">Conta de Crédito ➡️</label>
+			<input type="number" id="meuNumero" value="0">
+			<input type="text" id="nome" name="nome" placeholder="" minlength="3" max=length="255" required>
+			<br><br>
+
+			<label for ="nome">Conta de Despesas de Aluguel ➡️</label>
+			<input type="number" id="meuNumero" value="0">
+			<input type="text" id="nome" name="nome" placeholder="" minlength="3" max=length="255" required>
+			<br><br>
+
+			<label for ="nome">Conta de Compensação ➡️</label>
+			<input type="number" id="meuNumero" value="0">
+			<input type="text" id="nome" name="nome" placeholder="" minlength="3" max=length="255" required>
+			<br><br>
+
+			<input style="background-color: #FFD32C;" type="submit" value="Inserir" >
+			<input style="background-color: #FFD32C;" type="submit" value="Cancelar">
+			<input style="background-color: #FFD32C;" type="submit" value="Log">	
+			
+		</form>
+	</body>
+</html>
