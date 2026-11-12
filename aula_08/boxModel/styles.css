@@ -1,0 +1,40 @@
+*{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+.box1{
+    border: 1px solid #ff0000;
+
+    /*padding - espaco inteiro*/
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 60px;
+    padding-right: 100px;
+
+    /*margin - espaco externo*/
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-right: 400px;
+}
+.box2{
+    border: 5px solid #000fff;
+    
+    /* padding: espaco interno */
+    padding-top: 10%;
+    padding-left: 50%;
+    padding-bottom: 15%;
+
+    /*margin: espaco externo */
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 5%; ;
+}
+.box3{
+    border-left: 10px solid #f0f ;
+    border-top: 10px dashed #700271;
+    /*Ordem: top right bottom left*/
+    /*ORDEM: cima direita baixo esquerda*/
+    padding: 10% 5% 30% 15% ;
+    margin: 5% 5% 5% 10%;
+}
